@@ -294,10 +294,10 @@
     .advantages__item-title {
       color: $green;
     }
-    .advantages__item-images{
-g{
-  fill: #fff;
-}
+    .advantages__item-images {
+      g {
+        fill: #fff;
+      }
     }
   }
   &-images {
@@ -310,7 +310,6 @@ g{
     align-items: center;
     margin: 0 auto 30px;
     transition: all 0.5s;
-
   }
   &-title {
     @include f500;
@@ -318,27 +317,63 @@ g{
     color: #fff;
     font-size: 24px;
     transition: all 0.5s;
-
   }
   &-text {
     font-size: 15px;
     color: #b0bec5;
   }
 }
-.icosvg-1{
-  svg{
+.icosvg-1 {
+  svg {
     width: 50px;
   }
 }
-.icosvg-2{
-  svg{
-  width: 70px;
+.icosvg-2 {
+  svg {
+    width: 70px;
   }
 }
-.icosvg-3{
-  svg{
+.icosvg-3 {
+  svg {
     width: 86px;
   }
 }
-
 //end advantages
+
+//start author
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 265px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
+}
+
+//end author
